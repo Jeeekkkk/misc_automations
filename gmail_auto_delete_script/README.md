@@ -1,16 +1,16 @@
-# Gmail Auto Archive Script
+# Gmail Auto Delete Script
 
-This Google Apps Script automatically archives emails after 24 hours or 7 days, depending on the label assigned. It's useful for time-sensitive emails like calendar invites or daily notifications that become irrelevant shortly after receipt.
+This Google Apps Script automatically deletes emails after 24 hours or 7 days, depending on the label assigned. It's useful for time-sensitive emails like calendar invites or daily notifications that become irrelevant shortly after receipt.
 
 ## What It Does
 
 The script checks for emails labeled:
-- **`24hr Archive`** — moves to trash after 1 day
-- **`1w Archive`** — moves to trash after 7 days
+- **`24hr Delete`** — moves to trash after 1 day
+- **`1w Delete`** — moves to trash after 7 days
 
 Each labeled thread is checked for age based on the last message date. If older than the defined delay, it’s marked read, unimportant, and moved to the trash.
 
-> *This script permanently deletes emails (by moving to trash). Modify behavior if you want to archive instead of delete.*
+> *This script permanently deletes emails (by moving to trash). Please see the gmail_auto_archive folder if you want to archive instead of delete.*
 
 ---
 
@@ -19,8 +19,8 @@ Each labeled thread is checked for age based on the last message date. If older 
 ### 1. Create Gmail Labels
 
 In Gmail, create the following labels:
-- `24hr Archive`
-- `1w Archive`
+- `24hr delete`
+- `1w delete`
 
 Label names **must match exactly**.
 
@@ -31,7 +31,7 @@ For any emails you want to auto-delete:
 - Open a target email
 - Click the 3-dot menu near the date > **Filter messages like this**
 - Click **Create filter**
-- Choose **Apply label** → select either `24hr Archive` or `1w Archive`
+- Choose **Apply label** → select either `24hr Delete` or `1w Delete`
 - Click **Create filter** again
 
 Repeat for any others.
@@ -41,8 +41,8 @@ Repeat for any others.
 
 1. Visit [Google Apps Script](https://script.google.com/home/start)  
 2. Click **New Project**  
-3. Name your project (e.g. `Time-Based Email Archive`)  
-4. Paste in the code from `autoarchive.gs`  
+3. Name your project (e.g. `Time-Based Email Delete`)  
+4. Paste in the code from `autodelete.gs`  
 5. Enable Gmail API:  
    - Click `+ Services` > find **Gmail API** > click **Add**  
 6. Rename the file (optional)  
