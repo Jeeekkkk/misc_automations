@@ -72,6 +72,9 @@ Repeat for the second function.
 7. Verify that old labeled emails were moved to the archive  
 8. Repeat for `weekArchive`
 
+The script is now implemented, there is no need to use the Deploy feature. The time-based triggers are active.
+Logs showing each run can be found in the left toolbar, **Executions**. Failed executions will result in email notifications in your inbox.
+Continue creating filters for emails that you would like to have auto-archived!
 
 ## References
 
