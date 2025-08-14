@@ -64,12 +64,13 @@ Repeat for the second function.
 
 ### 5. Test the Script
 
-1. Make sure target emails are labeled correctly  
-2. In the script editor, select `dayArchive` from the function dropdown  
-3. Click **Run**  
-4. Check logs for `Execution completed`  
-5. Verify that old labeled emails were moved to the archive  
-6. Repeat for `weekArchive`
+1. Ensure target emails are labeled correctly as covered in Step 2 "Add Gmail Filters"
+2. In the left toolbar, go back to **Editor** (<> icon)
+3. In the script editor, select `dayArchive` from the function dropdown  
+4. Click **Run**
+6. Check logs for `Execution completed`, typeErrors are typically due to missing or incorrectly named labels  
+7. Verify that old labeled emails were moved to the archive  
+8. Repeat for `weekArchive`
 
 
 ## References
